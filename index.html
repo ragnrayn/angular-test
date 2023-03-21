@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUTEAT</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__inner">
+            <p class="caption">Обирай їжу з AI</p>
+            <p class="slogan">знайди те, що любиш!</p>
+          </div>
+          <button class="btn">Почати</button>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo">
+        <div class="container container--mini">
+          <h1></h1>
+          <div class="search-box">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="icons/steps.svg" />
+              <source
+                media="(min-width: 600px)"
+                srcset="icons/steps-tablet.svg"
+              />
+              <img class="search-box__steps" src="" alt="" />
+            </picture>
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="icons/logo-tuteat-big-mobile.svg"
+              />
+              <img
+                class="logo logo--big"
+                src="icons/logo-tuteat-big.svg"
+                alt="logotype tuteat"
+                width="400"
+              />
+            </picture>
+            <form action="#" class="search-form">
+              <div class="search-form__group">
+                <input
+                  type="text"
+                  placeholder="Вкажіть вашу адресу"
+                  name="address"
+                  class="search-form__input"
+                />
+                <span class="icon-location search-form__location"></span>
+                <ul class="search-form__list">
+                  <li class="search-form__item">
+                    <span class="search-form__address">проспект Перемоги</span>
+                    <span class="search-form__city">Київ, Україна</span>
+                  </li>
+                  <li class="search-form__item">
+                    <span class="search-form__address">площа Перемоги</span>
+                    <span class="search-form__city">Київ, Україна</span>
+                  </li>
+                  <li class="search-form__item">
+                    <span class="search-form__address"
+                      >проспект Перемоги 9a</span
+                    >
+                    <span class="search-form__city">Київ, Україна</span>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn--orange">Шукати</button>
+            </form>
+          </div>
+          <h2>
+            Ми піднімаємо замовлення їжі на
+            <span class="text-decor">новий рівень!</span>
+            <span
+              ><span class="text-decor text-decor--mobile">новий</span>
+              рівень!</span
+            >
+          </h2>
+          <div class="promo__wrapper">
+            <div class="promo__inner">
+              <p>
+                Насолоджуйся найсмачнішими стравами зi свого улюбленого закладу,
+                а все інше - залиш нам
+              </p>
+              <p>
+                Наш штучний інтелект пропонує замовлення в один клік, за вашими
+                вподобаннями
+              </p>
+            </div>
+            <div class="promo__slogan">
+              <div class="blob-wrapper">
+                <div class="blob"></div>
+              </div>
+              <p class="slogan">
+                Відкрий для себе новий світ без проблем з вибором їжі та
+                доставкою!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper footer__wrapper--top">
+          <div class="footer__inner footer__inner--1">
+            <a href="#" class="logo"
+              ><img
+                class="logo__img"
+                src="icons/logo-tuteat-dark.svg"
+                alt="logotype tuteat"
+                width="109"
+            /></a>
+          </div>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link"
+                ><span class="icon-instagram"></span
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="icon-linkedin"></span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="icon-twitter"></span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="icon-youtube"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__inner footer__inner--2">
+            <button class="btn">Зв'язатися з нами</button>
+          </div>
+        </div>
+        <div class="footer__wrapper footer__wrapper--bottom">
+          <a href="#" class="footer__link">Design by Julia Ohorodnik</a>
+          <p class="footer__copy">© 2023 TutEat</p>
+          <div>
+            <a href="#" class="footer__link">Політика конфіденційності</a>
+            <br />
+            <a href="#" class="footer__link"
+              >Політика використання файлів cookie</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
