@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TUTEAT</title>
+    <title>Search</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <script defer src="js/app.js"></script>
-    <script defer src="js/index.js"></script>
+    <script defer src="js/search.js"></script>
   </head>
-  <body class="main-page">
+  <body class="search-page">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -17,12 +17,17 @@
             <p class="caption">Обирай їжу з AI</p>
             <p class="slogan">знайди те, що любиш!</p>
           </div>
-          <p class="address"></p>
-          <button class="btn">Почати</button>
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="header__inner header__inner--right">
+            <p class="header__location">
+              <span class="icon-location-mini"></span>
+              <span class="header__location-text">проспект Перемоги 32А</span>
+            </p>
+            <button class="btn">Почати</button>
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -33,10 +38,13 @@
           <h1></h1>
           <div class="search-box">
             <picture>
-              <source media="(min-width: 1024px)" srcset="icons/steps.svg" />
+              <source
+                media="(min-width: 1024px)"
+                srcset="icons/steps-search.svg"
+              />
               <source
                 media="(min-width: 600px)"
-                srcset="icons/steps-tablet.svg"
+                srcset="icons/steps-search-tablet.svg"
               />
               <img class="search-box__steps" src="" alt="" />
             </picture>
@@ -52,15 +60,15 @@
                 width="384"
               />
             </picture>
-            <form action="#" class="search-form" id="search-meals">
+            <form action="#" class="search-form">
               <div class="search-form__group">
                 <input
                   type="text"
-                  placeholder="Вкажіть вашу адресу"
-                  name="address"
+                  placeholder="Що хочеться смачненького?"
+                  name="search"
                   class="search-form__input"
                 />
-                <span class="search-form__icon icon-location"></span>
+                <span class="search-form__icon icon-search"></span>
                 <span class="search-form__close icon-close"></span>
                 <ul class="search-form__list">
                   <li class="search-form__item">
@@ -82,37 +90,8 @@
               <button class="btn btn--orange">Шукати</button>
             </form>
           </div>
-          <h2>
-            Ми піднімаємо замовлення їжі на
-            <span class="text-decor">новий рівень!</span>
-            <span>
-              <span class="text-decor text-decor--mobile">новий</span>
-              <span class="text-decor text-decor--mobile text-decor--mobile-2"
-                >рівень!</span
-              >
-            </span>
-          </h2>
-          <div class="promo__wrapper">
-            <div class="promo__inner">
-              <p>
-                Насолоджуйся найсмачнішими стравами зi свого улюбленого закладу,
-                а все інше - залиш нам
-              </p>
-              <p>
-                Наш штучний інтелект пропонує замовлення в один клік, за вашими
-                вподобаннями
-              </p>
-            </div>
-            <div class="promo__slogan">
-              <div class="blob-wrapper">
-                <div class="blob"></div>
-              </div>
-              <p class="slogan">
-                Відкрий для себе новий світ без проблем з вибором їжі та
-                доставкою!
-              </p>
-            </div>
-          </div>
+          <h2>тут <span class="text-decor">смачненьке</span> тільки для вас</h2>
+          <div class="promo__wrapper"></div>
         </div>
       </section>
     </main>
