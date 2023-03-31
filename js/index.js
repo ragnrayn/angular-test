@@ -16,6 +16,7 @@ function getUserAddress() {
         .slice(1)}, ${fullAddress[2]}`;
 
       searchInput.value = address;
+      localStorage.setItem("address", address);
     });
   });
 }
@@ -26,7 +27,7 @@ async function fetchMeals(latitude, longitude) {
   const body = {
     latitude,
     longitude,
-    radius: 20000,
+    radius: 30000,
   };
   try {
     const response = await fetch(

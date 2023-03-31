@@ -18,10 +18,10 @@
             <p class="slogan">знайди те, що любиш!</p>
           </div>
           <div class="header__inner header__inner--right">
-            <p class="header__location">
+            <!-- <p class="header__location">
               <span class="icon-location-mini"></span>
               <span class="header__location-text">проспект Перемоги 32А</span>
-            </p>
+            </p> -->
             <button class="btn">Почати</button>
             <div class="burger">
               <span></span>
@@ -36,59 +36,63 @@
       <section class="promo">
         <div class="container container--mini">
           <h1></h1>
-          <div class="search-box">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="icons/steps-search.svg"
-              />
-              <source
-                media="(min-width: 600px)"
-                srcset="icons/steps-search-tablet.svg"
-              />
-              <img class="search-box__steps" src="" alt="" />
-            </picture>
-            <picture>
-              <source
-                media="(max-width: 600px)"
-                srcset="icons/logo-tuteat-big-mobile.svg"
-              />
-              <img
-                class="logo logo--big"
-                src="icons/logo-tuteat-big.svg"
-                alt="logotype tuteat"
-                width="384"
-              />
-            </picture>
-            <form action="#" class="search-form">
-              <div class="search-form__group">
-                <input
-                  type="text"
-                  placeholder="Що хочеться смачненького?"
-                  name="search"
-                  class="search-form__input"
+          <div class="promo__search-wrapper">
+            <div class="search-box">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="icons/steps-search.svg"
                 />
-                <span class="search-form__icon icon-search"></span>
-                <span class="search-form__close icon-close"></span>
-                <ul class="search-form__list">
-                  <li class="search-form__item">
-                    <span class="search-form__address">проспект Перемоги</span>
-                    <span class="search-form__city">Київ, Україна</span>
-                  </li>
-                  <li class="search-form__item">
-                    <span class="search-form__address">площа Перемоги</span>
-                    <span class="search-form__city">Київ, Україна</span>
-                  </li>
-                  <li class="search-form__item">
-                    <span class="search-form__address"
-                      >проспект Перемоги 9a</span
-                    >
-                    <span class="search-form__city">Київ, Україна</span>
-                  </li>
-                </ul>
-              </div>
-              <button class="btn btn--orange">Шукати</button>
-            </form>
+                <source
+                  media="(min-width: 600px)"
+                  srcset="icons/steps-search-tablet.svg"
+                />
+                <img class="search-box__steps" src="" alt="" />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="icons/logo-tuteat-big-mobile.svg"
+                />
+                <img
+                  class="logo logo--big"
+                  src="icons/logo-tuteat-big.svg"
+                  alt="logotype tuteat"
+                  width="384"
+                />
+              </picture>
+              <form action="#" class="search-form">
+                <div class="search-form__group">
+                  <input
+                    type="text"
+                    placeholder="Що хочеться смачненького?"
+                    name="search"
+                    class="search-form__input"
+                  />
+                  <span class="search-form__icon icon-search"></span>
+                  <span class="search-form__close icon-close"></span>
+                  <ul class="search-form__list">
+                    <li class="search-form__item">
+                      <span class="search-form__address"
+                        >проспект Перемоги</span
+                      >
+                      <span class="search-form__city">Київ, Україна</span>
+                    </li>
+                    <li class="search-form__item">
+                      <span class="search-form__address">площа Перемоги</span>
+                      <span class="search-form__city">Київ, Україна</span>
+                    </li>
+                    <li class="search-form__item">
+                      <span class="search-form__address"
+                        >проспект Перемоги 9a</span
+                      >
+                      <span class="search-form__city">Київ, Україна</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--orange">Шукати</button>
+              </form>
+            </div>
           </div>
           <h2>тут <span class="text-decor">смачненьке</span> тільки для вас</h2>
           <div class="promo__wrapper"></div>
