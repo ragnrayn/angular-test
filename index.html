@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <script defer src="js/app.js"></script>
     <script defer src="js/index.js"></script>
+    <script defer src="js/popup.js"></script>
   </head>
   <body class="main-page">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <a href="/" class="header__inner">
-            <p class="caption">Обирай їжу з AI</p>
-            <p class="slogan">знайди те, що любиш!</p>
+            <p class="caption">Щоб їсти GOOD</p>
+            <p class="slogan">клацай TUT</p>
           </a>
           <p class="address"></p>
-          <button class="btn">Почати</button>
+          <button class="btn start">Почати</button>
           <div class="burger">
             <span></span>
             <span></span>
@@ -34,7 +35,11 @@
           <div class="promo__search-wrapper">
             <div class="search-box">
               <picture>
-                <source media="(min-width: 1024px)" srcset="icons/steps.svg" />
+                <source media="(min-width: 1441px)" srcset="icons/steps.svg" />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="icons/steps-middle.svg"
+                />
                 <source
                   media="(min-width: 600px)"
                   srcset="icons/steps-tablet.svg"
@@ -194,5 +199,47 @@
         </div>
       </div>
     </footer>
+    <div class="overlay-popup">
+      <div class="popup">
+        <span class="popup__close icon-close"></span>
+        <h3 class="popup__title">увійти</h3>
+        <p class="popup__text">
+          Ще не зареєстровані в TUTEAT?
+          <span class="popup__reg">Реєстрація</span>
+        </p>
+        <a href="#" class="popup__link google">
+          <img
+            class="popup__link-img"
+            src="icons/sign/Google.svg"
+            alt="google"
+          />
+          Увійти з Google
+        </a>
+        <a href="#" class="popup__link apple">
+          <img
+            class="popup__link-img"
+            src="icons/sign/Apple.svg"
+            alt="google"
+          />
+          Увійти з Apple
+        </a>
+        <a href="#" class="popup__link facebook">
+          <img
+            class="popup__link-img"
+            src="icons/sign/Facebook.svg"
+            alt="google"
+          />
+          Увійти з Facebook
+        </a>
+        <a href="#" class="popup__link email">
+          <img class="popup__link-img" src="icons/sign/Mail.svg" alt="google" />
+          Увійти з Email
+        </a>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <img class="loader" src="images/loader.gif" alt="завантаження" />
+    </div>
   </body>
 </html>

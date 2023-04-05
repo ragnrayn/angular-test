@@ -25,6 +25,12 @@ async function fetchMeals(latitude, longitude) {
 function searchMealsFromLocation() {
   const locationBtn = document.querySelector(".icon-location");
   locationBtn.addEventListener("click", () => {
+    const overlay = document.querySelector(".overlay");
+    const loader = document.querySelector(".loader");
+    setTimeout(() => {
+      overlay.classList.add("active");
+      loader.classList.add("active");
+    }, 500);
     navigator.geolocation.getCurrentPosition(async (position) => {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
