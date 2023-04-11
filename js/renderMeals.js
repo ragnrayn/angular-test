@@ -30,14 +30,3 @@ function renderMeals() {
 }
 
 renderMeals();
-
-const searchForm = document.querySelector(".search-form");
-const testBtn = document.querySelector(".btn.btn--orange");
-
-searchForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
-
-testBtn.addEventListener("click", () => {
-  window.location.replace("/meal.html");
-});
