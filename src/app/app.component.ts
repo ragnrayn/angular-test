@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'test';
+  States = States;
+  state: States = States.Description;
+  isModalOpened: boolean = false;
+  localMeals: [] | null = null;
+}
+
+export enum States {
+  LocalMeals = 'localMeals',
+  Meal = 'meal',
+  Description = 'description'
 }

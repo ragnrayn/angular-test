@@ -1,0 +1,76 @@
+@import "../../../assets/styles/variables";
+
+.overlay-popup {
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00000081;
+  &.active {
+    display: block;
+  }
+}
+
+.popup {
+  max-width: 816px;
+  width: 100%;
+  background: @default-3;
+  padding: 80px 20px;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  &.active {
+    display: block;
+  }
+}
+
+.popup__close {
+  font-size: 23px;
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popup__title {
+  font-family: "e-Ukr-Regular";
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 2.75rem;
+}
+
+.popup__text {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.popup__reg {
+  color: @purple-80;
+  cursor: pointer;
+  margin-left: 17px;
+}
+
+.popup__link {
+  padding: 11px;
+  border: 1px solid @purple-40;
+  border-radius: 16px;
+  max-width: 318px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: @default-10;
+  text-align: center;
+  margin: 0 auto 24px;
+}
+
+.popup__link-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
