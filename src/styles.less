@@ -20,25 +20,30 @@
 @font-face {
   font-family: "e-Ukr-Regular";
   font-display: swap;
-  src: url("./assets/fonts/e-Ukraine-Regular.otf") format('opentype');;
+  src: url("./assets/fonts/e-Ukraine-Regular.otf") format('opentype');
+  ;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "e-Ukr-Medium";
   font-display: swap;
-  src: url('./assets/fonts/e-Ukraine-Medium.otf') format('opentype');;
+  src: url('./assets/fonts/e-Ukraine-Medium.otf') format('opentype');
+  ;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "e-Ukr-Bold";
   font-display: swap;
-  src: url('./assets/fonts/e-Ukraine-Bold.otf') format('opentype');;
+  src: url('./assets/fonts/e-Ukraine-Bold.otf') format('opentype');
+  ;
   font-weight: 700;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -51,7 +56,12 @@ body {
   background: @default-3;
 }
 
-h6, h5, h4, h3, h2, h1 {
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
   margin: 0;
   line-height: 1.2;
   font-family: "e-Ukr-Bold";
@@ -78,19 +88,25 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 64px;
   }
 }
 
 @media (max-width: 768px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 55px;
   }
 }
 
 @media (max-width: 600px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 32px;
     max-width: 326px;
   }
@@ -108,17 +124,21 @@ p {
   margin: 0;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 0;
   list-style: none;
 }
 
-ol, ul, dl {
+ol,
+ul,
+dl {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-sub, sup {
+sub,
+sup {
   position: relative;
   font-size: .75em;
   line-height: 0;
@@ -142,12 +162,14 @@ a:hover {
   color: @purple-main;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
 
-img, svg {
+img,
+svg {
   vertical-align: middle;
   width: 100%
 }
@@ -164,14 +186,19 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
@@ -191,11 +218,17 @@ select:disabled {
   display: none !important;
 }
 
-button, [type=button], [type=reset], [type=submit] {
+button,
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
-button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
   cursor: pointer;
 }
 
@@ -216,7 +249,8 @@ textarea {
   font-display: block;
 }
 
-[class^=icon-], [class*=" icon-"] {
+[class^=icon-],
+[class*=" icon-"] {
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
@@ -301,6 +335,7 @@ textarea {
 .icon-location:before {
   content: "";
   color: #7d88f2;
+  margin-left: -13px;
 }
 
 .icon-youtube:before {
@@ -348,6 +383,7 @@ textarea {
     width: 44px;
     height: 44px;
   }
+
   100% {
     width: 112px;
     height: 112px;
@@ -359,6 +395,7 @@ textarea {
     width: 44px;
     height: 44px;
   }
+
   100% {
     width: 112px;
     height: 112px;
@@ -370,6 +407,7 @@ textarea {
     width: 44px;
     height: 44px;
   }
+
   100% {
     width: 80px;
     height: 80px;
@@ -381,6 +419,7 @@ textarea {
     width: 44px;
     height: 44px;
   }
+
   100% {
     width: 80px;
     height: 80px;
@@ -391,6 +430,7 @@ textarea {
   0% {
     border-width: 0px;
   }
+
   100% {
     border-width: 8px;
   }
@@ -400,6 +440,7 @@ textarea {
   0% {
     border-width: 0px;
   }
+
   100% {
     border-width: 8px;
   }
@@ -412,7 +453,7 @@ textarea {
   white-space: nowrap;
 }
 
-.text-decor + span {
+.text-decor+span {
   display: none;
 }
 
@@ -426,7 +467,7 @@ textarea {
     display: inline;
   }
 
-  .text-decor + span {
+  .text-decor+span {
     display: inline;
   }
 
@@ -463,7 +504,8 @@ textarea {
   animation-timing-function: ease-out;
 }
 
-.blob::before, .blob::after {
+.blob::before,
+.blob::after {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0);
@@ -505,15 +547,16 @@ textarea {
   opacity: 0;
   visibility: hidden;
 }
+
 ::-webkit-scrollbar-track {
   width: 6px;
   background: rgba(0, 0, 0, 0);
   opacity: 0;
   visibility: hidden;
 }
+
 ::-webkit-scrollbar-thumb {
   width: 6px;
   background: @purple-40;
   border-radius: 32px;
 }
-

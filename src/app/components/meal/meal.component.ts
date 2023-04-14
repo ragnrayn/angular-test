@@ -20,7 +20,21 @@ export class MealComponent {
     });
   }
 
+  flipOnCard(){
+    const card = document.querySelector(".card") as HTMLElement;
+    const flipBtn = document.querySelector(".card-flip") as HTMLElement;
+    const cardOptions = document.querySelector(".card__options") as HTMLElement;
+
+    card.addEventListener("click", (event) => {
+      card.classList.add("flip")
+      setTimeout(() => {
+        cardOptions.classList.add("visible")
+      }, 100)
+    })
+  }
+
   ngOnInit() {
     this.flipCard();
+    this.flipOnCard();
   }
 }

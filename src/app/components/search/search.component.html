@@ -32,25 +32,13 @@
               type="text"
               placeholder="Вкажіть вашу адресу"
               class="search-form__input"
+              (input)="getNameOfLocation($event)"
             />
-            <span class="search-form__icon icon-location" (click)="getLocation.emit()"></span>
+            <span class="search-form__icon icon-location" (click)="getCurrentCoords()"></span>
             <span class="search-form__close icon-close"></span>
-            <ul class="search-form__list">
-              <li class="search-form__item">
-                      <span class="search-form__address"
-                      >проспект Перемоги</span
-                      >
-                <span class="search-form__city">Київ, Україна</span>
-              </li>
-              <li class="search-form__item">
-                <span class="search-form__address">площа Перемоги</span>
-                <span class="search-form__city">Київ, Україна</span>
-              </li>
-              <li class="search-form__item">
-                      <span class="search-form__address"
-                      >проспект Перемоги 9a</span
-                      >
-                <span class="search-form__city">Київ, Україна</span>
+            <ul class="search-form__list" [ngClass]="possibleStreets.results ? 'active' : ''">
+              <li class="search-form__item" *ngFor="let address of possibleStreets.results" (click)="getLocationFromList($event)">
+                <span>{{ address.formatted_address }}</span>
               </li>
             </ul>
           </div>
