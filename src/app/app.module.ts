@@ -7,9 +7,11 @@ import { MealCardComponent } from './components/meal-card/meal-card.component';
 import { PromoDescriptionComponent } from './components/promo-description/promo-description.component';
 import { MealComponent } from './components/meal/meal.component';
 import { ModalComponent } from './components/modal/modal.component';
-import { RouterModule, Routes } from "@angular/router";
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,15 @@ import { HttpClientModule } from '@angular/common/http';
     MealCardComponent,
     PromoDescriptionComponent,
     MealComponent,
-    ModalComponent
+    ModalComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     GoogleMapsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })

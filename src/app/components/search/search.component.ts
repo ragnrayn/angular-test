@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { States } from "../../app.component";
+import { States } from 'src/app/pages/home/home.component';
 
 @Component({
   selector: 'app-search',
@@ -20,6 +20,20 @@ export class SearchComponent {
       this.userPosition = { lat: res.coords.latitude, long: res.coords.longitude }
       this.getLocation.emit(this.userPosition)
     })
+  }
+
+  toggleLoader(){
+    let loader = document.querySelector(".loader")
+    let searchFormIcon = document.querySelector(".search-form__icon")
+
+    if(searchFormIcon){
+      setTimeout(() => {
+        loader?.classList.add("loader-active")
+      }, 0)
+      setTimeout(() => {
+        loader?.classList.remove("loader-active");
+      }, 3000)
+    }
   }
 
   getNameOfLocation($event: any) {

@@ -34,7 +34,10 @@
               class="search-form__input"
               (input)="getNameOfLocation($event)"
             />
-            <span class="search-form__icon icon-location" (click)="getCurrentCoords()"></span>
+            <span class="search-form__icon icon-location" (click)="getCurrentCoords(); toggleLoader()"></span>
+            <div class="loader">
+              <img src="../../../assets/images/loader-transparent.gif" class="loader-gif" alt="">
+            </div>
             <span class="search-form__close icon-close"></span>
             <ul class="search-form__list" [ngClass]="possibleStreets.results ? 'active' : ''">
               <li class="search-form__item" *ngFor="let address of possibleStreets.results" (click)="getLocationFromList($event)">
